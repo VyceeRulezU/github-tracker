@@ -7,7 +7,8 @@ import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter basename="/github-tracker">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+
 
       <Routes>
         <Route path="/" element={<Layout />}>
